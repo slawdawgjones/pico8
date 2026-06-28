@@ -1,0 +1,49 @@
+[000000] codo_init
+[000000]   platform: Windows
+[000000]   codo_system_init
+[000348]   Compiled against SDL version: 2.0.2
+[000348]   Linked against SDL version:   2.0.9
+[000348]   Current video driver: windows
+[000348]   codo_reset_timer
+[000348]   codo_gui_init
+[000348]   codo_keys_init
+[000348]   codo_text_init
+[000349]   codo_video_init
+[000349]   codo_mouse_init
+[000349]   codo_joystick_init
+[000351]   searching for joysticks
+[000351]     found 0 joysticks
+[000351]   ok
+[000351] ok
+[000364] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
+[000370] codo_set_screen 128 128 8 100
+[000370]  window size: 640 540
+[000370] setting fullscreen window size to 1500 1000
+[000514]   setting filter to nearest (screen_mode 1  back page width: 128)
+  renderer direct3d:
+   flags: 0x0000000E ( |  | )
+   texture formats (3): ARGB8888, YV12, IYUV
+   max texture size: 8192x8192
+[000520]  desktop size: 1500 1000
+[000520] ok
+[000527] codo_sound_init mix_buffer_size: 1024
+[000527] codo_sound_init
+[000527] SDL_INIT_AUDIO ok
+[000879] SDL_OpenAudio ok
+[000879]  freq:22050
+ channels:1
+[000879] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
+[000879] Current audio driver: wasapi
+[002895] splore_init
+[002895] could not load favourites file: C:/pico8/favourites.txt
+[010387] window closed (14)
+[010388] codo_exit
+[010388]   cmusic_stop
+[010388]   codo_main_exit
+[010393]   codo_config_save
+[010397]   codo_sound_exit
+[010397]   codo_video_exit
+[010493]   codo_joystick_exit
+[010493]   codo_system_exit
+[010493]   codo_items_created: 1302
+[010493] ok
