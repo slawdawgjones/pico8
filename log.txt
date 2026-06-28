@@ -1,49 +1,114 @@
 [000000] codo_init
 [000000]   platform: Windows
+[000000]   Found config.txt
+[000000]   
+[000000]     01 window_size 0 0 // window width, height
+[000000]     02 screen_size 0 0 // screen width, height (stretched to window) 
+[000000]     03 show_fps 0 // Draw frames per second in the corner
+[000000]     04 windowed 0 // 1 to start up in windowed mode
+[000000]     05 window_position -1 -1 // x and y position of window (-1, -1 to let the window manager decide)
+[000000]     new window position: -1, -1
+[000000]     06 frameless 0 // 1 to use a window with no frame
+[000000]     07 fullscreen_method 1 // 0 maximized window (linux)  1 borderless desktop-sized window  2 hardware fullscreen (warning: erratic behaviour under some drivers)
+[000000]     08 blit_method 0  // 0 auto  1 software (slower but sometimes more reliable)  2 hardware (can do filtered scaling) 
+[000000]     09 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
+[000000]     10 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
+[000000]     11 sessions 4 // number of times program has been run
+[000000]     12 rmb_key 0 // 0 for none  226 for LALT
+[000000]     13 desktop_path 
+[000000]     14 read_controllers_in_background 0
+[000000]     15 sound_volume 256 // 0..256
+[000000]     16 music_volume 256 // 0..256
+[000000]     17 mix_buffer_size 1024
+[000000]     18 map_scancodes 
+[000000]     19 use_wget 0 // (Linux) 1 to use wget for downloads instead of libcurl (must be installed)
+[000000]     20 version 0.2.7
+[000000]     21 volume 256
+[000000]     22 root_path C:/pico8/carts/
+[000000]     23 cdata_path C:/pico8/cdata/
+[000000]     24 joystick_index 0
+[000000]     25 merge_joysticks 0
+[000000]     26 button_keys 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[000000]     27 live_notes 0
+[000000]     28 cursor_snap 0
+[000000]     29 gui_theme 0
+[000000]     30 screenshot_scale 3
+[000000]     31 gif_scale 3
+[000000]     32 gif_len 16
+[000000]     33 gif_reset_mode 0
+[000000]     34 host_framerate_control 1
+[000000]     35 splore_filter 0
+[000000]     36 boot_to_splore 0
+[000000]     37 tab_width 1
+[000000]     38 draw_tabs 0
+[000000]     39 record_activity_log 1
+[000000]     40 allow_function_keys 1
+[000000]     41 check_for_cart_updates 1
+[000000]     42 auto_hide_mouse_cursor 5
+[000000]     43 aggressive_backups 0
+[000000]     44 periodic_backups 20
+[000000]     45 transform_screen 0
+[000000]     46 gfx_grid_lines 0
+[000000]     47 capture_timestamps 0
+[000000]     48 max_prefetch_threads 4
+[000000]     49 accept_future 0
+[000000]   
 [000000]   codo_system_init
-[000348]   Compiled against SDL version: 2.0.2
-[000348]   Linked against SDL version:   2.0.9
-[000348]   Current video driver: windows
-[000348]   codo_reset_timer
-[000348]   codo_gui_init
-[000348]   codo_keys_init
-[000348]   codo_text_init
-[000349]   codo_video_init
-[000349]   codo_mouse_init
-[000349]   codo_joystick_init
-[000351]   searching for joysticks
-[000351]     found 0 joysticks
-[000351]   ok
-[000351] ok
-[000364] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
-[000370] codo_set_screen 128 128 8 100
-[000370]  window size: 640 540
-[000370] setting fullscreen window size to 1500 1000
-[000514]   setting filter to nearest (screen_mode 1  back page width: 128)
+[000604]   Compiled against SDL version: 2.0.2
+[000604]   Linked against SDL version:   2.0.9
+[000604]   Current video driver: windows
+[000604]   codo_reset_timer
+[000604]   codo_gui_init
+[000604]   codo_keys_init
+[000604]   codo_text_init
+[000604]   codo_video_init
+[000604]   codo_mouse_init
+[000604]   codo_joystick_init
+[000605]   Reading controller mappings: C:/Pico8/sdl_controllers.txt
+[000605]   searching for joysticks
+[000605]     found 0 joysticks
+[000605]   ok
+[000605] ok
+[000611] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
+[000613] codo_set_screen 128 128 8 100
+[000613]  window size: 640 540
+[000613] setting fullscreen window size to 1920 1080
+[001303]   setting filter to nearest (screen_mode 1  back page width: 128)
   renderer direct3d:
    flags: 0x0000000E ( |  | )
    texture formats (3): ARGB8888, YV12, IYUV
-   max texture size: 8192x8192
-[000520]  desktop size: 1500 1000
-[000520] ok
-[000527] codo_sound_init mix_buffer_size: 1024
-[000527] codo_sound_init
-[000527] SDL_INIT_AUDIO ok
-[000879] SDL_OpenAudio ok
-[000879]  freq:22050
+   max texture size: 16384x16384
+[001305]  desktop size: 1920 1080
+[001305] ok
+[001307] codo_sound_init mix_buffer_size: 1024
+[001307] codo_sound_init
+[001307] SDL_INIT_AUDIO ok
+[001418] SDL_OpenAudio ok
+[001418]  freq:22050
  channels:1
-[000879] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
-[000879] Current audio driver: wasapi
-[002895] splore_init
-[002895] could not load favourites file: C:/pico8/favourites.txt
-[010387] window closed (14)
-[010388] codo_exit
-[010388]   cmusic_stop
-[010388]   codo_main_exit
-[010393]   codo_config_save
-[010397]   codo_sound_exit
-[010397]   codo_video_exit
-[010493]   codo_joystick_exit
-[010493]   codo_system_exit
-[010493]   codo_items_created: 1302
-[010493] ok
+[001418] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
+[001418] Current audio driver: wasapi
+[003428] splore_init
+[003428] could not load favourites file: C:/Pico8/favourites.txt
+[078001] run_cart current_filename: C:/pico8/carts/demos/cast.p8 running_filename: demos/cast.p8 running_cart_lid: 
+[130534] run_cart current_filename: C:/pico8/carts/demos/api.p8 running_filename: demos/api.p8 running_cart_lid: 
+[153103] run_cart current_filename: C:/pico8/carts/demos/collide.p8 running_filename: demos/collide.p8 running_cart_lid: 
+[246517] adding display boundary offset: 0 0 (1920 1080)
+[246760]   setting filter to nearest (screen_mode 0  back page width: 128)
+  renderer direct3d:
+   flags: 0x0000000E ( |  | )
+   texture formats (3): ARGB8888, YV12, IYUV
+   max texture size: 16384x16384
+[270631] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[4354180] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[4359709] window closed (14)
+[4359709] codo_exit
+[4359709]   cmusic_stop
+[4359709]   codo_main_exit
+[4359711]   codo_config_save
+[4359712]   codo_sound_exit
+[4359712]   codo_video_exit
+[4359715]   codo_joystick_exit
+[4359715]   codo_system_exit
+[4359716]   codo_items_created: 1312
+[4359716] ok
