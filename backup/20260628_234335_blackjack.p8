@@ -4,6 +4,13 @@ __lua__
 --gameloop
 
 function _init()
+	cls(1)
+	print("welcome to pico-jack", 25,40,10)
+	print("prepare to jack off")
+	rect(22,54,108,36)
+	
+	
+	print("press ❎ to continue",25,90)
 end
 
 function _update()
@@ -11,6 +18,8 @@ end
 
 function _draw()
 end
+-->8
+--player
 __label__
 dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc77dccccc7700000000
 d0000077d0000077d0000077d0000077d0000077d0000077d0000077d0000077d0000077d0000077d0000077d0000077d0000077d0000077d000007700000000

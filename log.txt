@@ -5,7 +5,7 @@
 [000000]     01 window_size 0 0 // window width, height
 [000000]     02 screen_size 0 0 // screen width, height (stretched to window) 
 [000000]     03 show_fps 0 // Draw frames per second in the corner
-[000000]     04 windowed 0 // 1 to start up in windowed mode
+[000000]     04 windowed 1 // 1 to start up in windowed mode
 [000000]     05 window_position -1 -1 // x and y position of window (-1, -1 to let the window manager decide)
 [000000]     new window position: -1, -1
 [000000]     06 frameless 0 // 1 to use a window with no frame
@@ -13,7 +13,7 @@
 [000000]     08 blit_method 0  // 0 auto  1 software (slower but sometimes more reliable)  2 hardware (can do filtered scaling) 
 [000000]     09 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
 [000000]     10 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
-[000000]     11 sessions 4 // number of times program has been run
+[000000]     11 sessions 5 // number of times program has been run
 [000000]     12 rmb_key 0 // 0 for none  226 for LALT
 [000000]     13 desktop_path 
 [000000]     14 read_controllers_in_background 0
@@ -54,61 +54,132 @@
 [000000]     49 accept_future 0
 [000000]   
 [000000]   codo_system_init
-[000604]   Compiled against SDL version: 2.0.2
-[000604]   Linked against SDL version:   2.0.9
-[000604]   Current video driver: windows
-[000604]   codo_reset_timer
-[000604]   codo_gui_init
-[000604]   codo_keys_init
-[000604]   codo_text_init
-[000604]   codo_video_init
-[000604]   codo_mouse_init
-[000604]   codo_joystick_init
-[000605]   Reading controller mappings: C:/Pico8/sdl_controllers.txt
-[000605]   searching for joysticks
-[000605]     found 0 joysticks
-[000605]   ok
-[000605] ok
-[000611] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
-[000613] codo_set_screen 128 128 8 100
-[000613]  window size: 640 540
-[000613] setting fullscreen window size to 1920 1080
-[001303]   setting filter to nearest (screen_mode 1  back page width: 128)
+[000592]   Compiled against SDL version: 2.0.2
+[000592]   Linked against SDL version:   2.0.9
+[000592]   Current video driver: windows
+[000592]   codo_reset_timer
+[000592]   codo_gui_init
+[000593]   codo_keys_init
+[000593]   codo_text_init
+[000593]   codo_video_init
+[000593]   codo_mouse_init
+[000593]   codo_joystick_init
+[000594]   Reading controller mappings: C:/Pico8/sdl_controllers.txt
+[000594]   searching for joysticks
+[000594]     found 0 joysticks
+[000594]   ok
+[000594] ok
+[000602] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
+[000605] codo_set_screen 128 128 8 100
+[000605]  window size: 640 540
+[001276]   setting filter to nearest (screen_mode 0  back page width: 128)
   renderer direct3d:
    flags: 0x0000000E ( |  | )
    texture formats (3): ARGB8888, YV12, IYUV
    max texture size: 16384x16384
-[001305]  desktop size: 1920 1080
-[001305] ok
-[001307] codo_sound_init mix_buffer_size: 1024
-[001307] codo_sound_init
-[001307] SDL_INIT_AUDIO ok
-[001418] SDL_OpenAudio ok
-[001418]  freq:22050
+[001278]  desktop size: 1920 1080
+[001278] ok
+[001280] codo_sound_init mix_buffer_size: 1024
+[001280] codo_sound_init
+[001280] SDL_INIT_AUDIO ok
+[001951] SDL_OpenAudio ok
+[001951]  freq:22050
  channels:1
-[001418] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
-[001418] Current audio driver: wasapi
-[003428] splore_init
-[003428] could not load favourites file: C:/Pico8/favourites.txt
-[078001] run_cart current_filename: C:/pico8/carts/demos/cast.p8 running_filename: demos/cast.p8 running_cart_lid: 
-[130534] run_cart current_filename: C:/pico8/carts/demos/api.p8 running_filename: demos/api.p8 running_cart_lid: 
-[153103] run_cart current_filename: C:/pico8/carts/demos/collide.p8 running_filename: demos/collide.p8 running_cart_lid: 
-[246517] adding display boundary offset: 0 0 (1920 1080)
-[246760]   setting filter to nearest (screen_mode 0  back page width: 128)
-  renderer direct3d:
-   flags: 0x0000000E ( |  | )
-   texture formats (3): ARGB8888, YV12, IYUV
-   max texture size: 16384x16384
-[270631] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[4354180] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[4359709] window closed (14)
-[4359709] codo_exit
-[4359709]   cmusic_stop
-[4359709]   codo_main_exit
-[4359711]   codo_config_save
-[4359712]   codo_sound_exit
-[4359712]   codo_video_exit
-[4359715]   codo_joystick_exit
-[4359715]   codo_system_exit
-[4359716]   codo_items_created: 1312
-[4359716] ok
+[001951] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
+[001952] Current audio driver: wasapi
+[003961] splore_init
+[003961] could not load favourites file: C:/Pico8/favourites.txt
+[561382] saving screenshot to: C:/Users/windr/OneDrive/Desktop/shmup_0.png
+[561430] codo_save_png result: 0  file: C:/Users/windr/OneDrive/Desktop/shmup_0.png
+[601691] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[703188] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[708000] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[717110] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[720750] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[726277] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[734187] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[736697] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[738638] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[740133] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[741588] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[742841] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[745012] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[784090] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[790267] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[792669] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[795939] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[801919] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[815962] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[830726] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[846527] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[850840] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[856060] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[859260] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[863531] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[868984] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[878003] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[881106] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[887883] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[891039] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[894121] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[896000] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[898281] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[902893] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[904848] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[906705] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[908747] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[911579] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[913690] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[916552] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[919232] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[948020] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[951348] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[977697] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[998490] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1001877] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1015116] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1017790] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1022122] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1023638] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1030380] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1031881] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1034558] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1037131] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1039112] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1054941] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1067578] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1073578] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1076561] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1081223] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1083205] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1085162] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1087098] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1087487] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1091238] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1093413] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1094918] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1099676] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1106533] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1305520] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1317979] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1341344] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1349584] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1361183] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1385513] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1420831] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1490223] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1494199] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1502395] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1512886] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1621769] run_cart current_filename: C:/pico8/carts/games/blackjack.p8 running_filename: games/blackjack.p8 running_cart_lid: 
+[1721696] window closed (14)
+[1721696] codo_exit
+[1721696]   cmusic_stop
+[1721696]   codo_main_exit
+[1721697]   codo_config_save
+[1721698]   codo_sound_exit
+[1721698]   codo_video_exit
+[1721703]   codo_joystick_exit
+[1721703]   codo_system_exit
+[1721703]   codo_items_created: 1390
+[1721703] ok
