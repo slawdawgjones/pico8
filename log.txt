@@ -5,7 +5,7 @@
 [000000]     01 window_size 0 0 // window width, height
 [000000]     02 screen_size 0 0 // screen width, height (stretched to window) 
 [000000]     03 show_fps 0 // Draw frames per second in the corner
-[000000]     04 windowed 0 // 1 to start up in windowed mode
+[000000]     04 windowed 1 // 1 to start up in windowed mode
 [000000]     05 window_position -1 -1 // x and y position of window (-1, -1 to let the window manager decide)
 [000000]     new window position: -1, -1
 [000000]     06 frameless 0 // 1 to use a window with no frame
@@ -13,7 +13,7 @@
 [000000]     08 blit_method 0  // 0 auto  1 software (slower but sometimes more reliable)  2 hardware (can do filtered scaling) 
 [000000]     09 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
 [000000]     10 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
-[000000]     11 sessions 1 // number of times program has been run
+[000000]     11 sessions 5 // number of times program has been run
 [000000]     12 rmb_key 0 // 0 for none  226 for LALT
 [000000]     13 desktop_path 
 [000000]     14 read_controllers_in_background 0
@@ -49,61 +49,189 @@
 [000000]     44 periodic_backups 20
 [000000]     45 transform_screen 0
 [000000]     46 gfx_grid_lines 0
-[000001]     47 capture_timestamps 0
-[000001]     48 max_prefetch_threads 4
-[000001]     49 accept_future 0
-[000001]   
-[000001]   codo_system_init
-[000359]   Compiled against SDL version: 2.0.2
-[000359]   Linked against SDL version:   2.0.9
-[000359]   Current video driver: windows
-[000359]   codo_reset_timer
-[000359]   codo_gui_init
-[000359]   codo_keys_init
-[000359]   codo_text_init
-[000360]   codo_video_init
-[000360]   codo_mouse_init
-[000360]   codo_joystick_init
-[000361]   Reading controller mappings: C:/pico8/sdl_controllers.txt
-[000361]   searching for joysticks
-[000362]     found 0 joysticks
-[000362]   ok
-[000362] ok
-[000372] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
-[000377] codo_set_screen 128 128 8 100
-[000377]  window size: 640 540
-[000377] setting fullscreen window size to 1500 1000
-[000551]   setting filter to nearest (screen_mode 1  back page width: 128)
+[000000]     47 capture_timestamps 0
+[000000]     48 max_prefetch_threads 4
+[000000]     49 accept_future 0
+[000000]   
+[000000]   codo_system_init
+[000170]   Compiled against SDL version: 2.0.2
+[000170]   Linked against SDL version:   2.0.9
+[000170]   Current video driver: windows
+[000170]   codo_reset_timer
+[000170]   codo_gui_init
+[000170]   codo_keys_init
+[000170]   codo_text_init
+[000170]   codo_video_init
+[000170]   codo_mouse_init
+[000170]   codo_joystick_init
+[000171]   Reading controller mappings: C:/pico8/sdl_controllers.txt
+[000171]   searching for joysticks
+[000171]     found 0 joysticks
+[000171]   ok
+[000171] ok
+[000178] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
+[000181] codo_set_screen 128 128 8 100
+[000181]  window size: 640 540
+[000282]   setting filter to nearest (screen_mode 0  back page width: 128)
   renderer direct3d:
    flags: 0x0000000E ( |  | )
    texture formats (3): ARGB8888, YV12, IYUV
    max texture size: 8192x8192
-[000555]  desktop size: 1500 1000
-[000555] ok
-[000561] codo_sound_init mix_buffer_size: 1024
-[000561] codo_sound_init
-[000561] SDL_INIT_AUDIO ok
-[000962] SDL_OpenAudio ok
-[000962]  freq:22050
+[000283]  desktop size: 1500 1000
+[000283] ok
+[000286] codo_sound_init mix_buffer_size: 1024
+[000286] codo_sound_init
+[000286] SDL_INIT_AUDIO ok
+[000424] SDL_OpenAudio ok
+[000424]  freq:22050
  channels:1
-[000962] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
-[000962] Current audio driver: wasapi
-[002986] splore_init
-[002986] could not load favourites file: C:/pico8/favourites.txt
-[307904] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[313131] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[355664] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[359921] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[408029] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[426194] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[729483] window closed (14)
-[729484] codo_exit
-[729484]   cmusic_stop
-[729484]   codo_main_exit
-[729489]   codo_config_save
-[729492]   codo_sound_exit
-[729492]   codo_video_exit
-[729579]   codo_joystick_exit
-[729579]   codo_system_exit
-[729580]   codo_items_created: 1303
-[729580] ok
+[000424] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
+[000424] Current audio driver: wasapi
+[002597] splore_init
+[002597] could not load favourites file: C:/pico8/favourites.txt
+[217739] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[236253] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[239243] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[254779] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[262159] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[268387] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[305086] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[314873] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1106976] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1111773] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1113630] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1118417] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1121292] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1125803] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1127807] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1130505] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1135055] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1137727] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1140009] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1142272] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1151210] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1155473] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1160211] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1164720] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1198644] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1225240] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1252340] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1265502] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1420758] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1424572] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1446923] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1456977] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1466401] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[1471648] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2068904] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2124920] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2126934] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2153368] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2160515] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2180016] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2190104] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2198425] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2243831] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2248995] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2253793] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2284973] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2303239] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2341797] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2372916] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2456907] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2480234] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2592820] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2603211] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2666934] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2737547] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2749131] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2750943] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2767639] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2775708] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2870152] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2896704] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2922877] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2928501] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[2946826] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3012159] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3018192] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3021109] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3023382] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3025340] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3073823] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3090962] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3101046] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3139182] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3149413] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3166189] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3257048] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3278186] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3318162] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3352362] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3357560] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3364982] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3391978] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3398330] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3406735] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3412655] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3419009] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3437836] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3451910] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3457425] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3465864] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3480388] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3491639] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3494909] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3498459] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3500025] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3504417] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3516771] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3522970] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3534441] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3550943] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3554137] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3578030] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3605462] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3610293] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3615057] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3620128] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3623904] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3649585] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3652398] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3657290] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3674120] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3676925] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3684174] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3687654] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3701790] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3706686] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3716976] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3721707] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3732511] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3738416] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3746408] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3759064] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3763837] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3810859] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3822157] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3834369] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3837122] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3849795] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3969095] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[3992211] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[4006056] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[4018197] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[4037035] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[4059077] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[4063553] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
+[4081168] window closed (14)
+[4081169] codo_exit
+[4081169]   cmusic_stop
+[4081169]   codo_main_exit
+[4081173]   codo_config_save
+[4081175]   codo_sound_exit
+[4081176]   codo_video_exit
+[4081212]   codo_joystick_exit
+[4081212]   codo_system_exit
+[4081213]   codo_items_created: 1302
+[4081213] ok

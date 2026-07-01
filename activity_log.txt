@@ -12,3 +12,33 @@
  iii.iiiiiiii.ccccmgmmmmgggmmmgggggg..g.ccc.........iii.......iii.........iiiii
 2026-06-28 20:43:22 C:/pico8/carts/untitled.p8
  ic
+2026-07-01 19:34:35 C:/pico8/carts/untitled.p8
+ iiiii..i.........ii
+2026-07-01 19:35:32 C:/pico8/carts/g.loop.p8
+ rciii
+2026-07-01 19:35:47 C:/pico8/carts/games/slots.p8
+ ci.........ii.........iii
+2026-07-01 19:58:31 C:/pico8/carts/untitled.p8
+ iciii
+2026-07-01 19:58:46 C:/pico8/carts/g.loop.p8
+ cggggggi.........gii.........iggcmmmmcggg.........ggggggccccccciiccciccc........
+ .ccccccccrc.........ccc.ccccccccccccc.........cggggccccccccccccccc.cc..cccrccccc
+ cccrr_________cccc.........ccgggggggigggccccc..cccggggggggggrggggggrgggccccccc..
+ .ccccc.ccc..cccrcccccrccc.....c..rc.........cccrcccccc.........ccrccrc.c.crccccc
+ ccc.cccccc.cc.........ccc.........ccicrcccc.........cccccccccc.c.cciccccciiccccc
+ cicccccrccccccccicccccccrccrcccccccc.........ccc.........cccccc.ccircrcccrrrcccc
+ ccc.........rcccccccccccccc...ccicccc.........c.ccc.........cccc.c.........ccccc
+ .cc.ccccccrccrcccccicc.cccccrrrrr_________r_________ccc
+2026-07-01 21:43:46 C:/pico8/carts/untitled.p8
+ iiiii.........i.........i
+2026-07-01 21:47:04 C:/pico8/carts/games/slots.p8
+ i..ccccccccciiccccrcccccccccc......cccrccc.cc....cc......cc.........c.c.........
+ cc.........icrccciccrccc.cccccrccccccccccccccc..ccrccccccccrccccccc.cc.........c
+ cccccc...ccccicc....icccccccrc.........ccc.........cicccc.c..ccccccccccccccccccc
+ rccccccccrcccccrrc......ccccccccrcc.ccccccccrc..ccrrccccccccccciccccccccccccc...
+ ccc.........ccccccccrccgi.........i.........cccrccc.........ccccrccc.........ccc
+ ccrcccccccccc..ccc.........rccccccccrccc....cccccccccccc.ccc.....cc...ccccicciic
+ ccccccc.c.c.cccccccccccciccc.cccccccccccrcccccrc.........rccccccrccccccccccccrcc
+ ccccccccccccccccccccccccrccccccccccccrcccccccccccc.iiccrrrcrccccccrccriccccrcccc
+ ccccccccccccccccicrrccccccccccicccccccciiiicciccccccccciciccccccrrrcccccccc..ccc
+ ccrrcrrccrrccciccccccccc.........rrccccccrrc.crrrcr____rcccccccrrrriiic

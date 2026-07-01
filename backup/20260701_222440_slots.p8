@@ -2,21 +2,20 @@ pico-8 cartridge // http://www.pico-8.com
 version 43
 __lua__
 --gameloop 
-gamestate=0 --0 menu, 1 roll, 2 results
+
+function _init()
+cls(1)
+print("welcome to slots!",20,64,10)
+print("press z to roll slots")
+end
 
 function _update()
-	if btnp(4) and gamestate==0 then rollslots() 
-	elseif btnp(4) and gamestate==1 then results() 
-	elseif btnp(4) and gamestate==2 then cls(2) rollslots() 
-	end
+	if btnp(4) then rollslots() end
 end
 
 function _draw()
-	if gamestate==0 then
-		cls(1)
-		print("welcome to slots!",20,40,10)
-		print("press z to roll slots")		
-	end
+
+	results()
 end
 -->8
 --slots logic
@@ -24,21 +23,15 @@ end
 slots={}
 
 function rollslots()
-	gamestate=1
-	print("rolling...")
-	slots.a=flr(rnd(3)+1)
-	slots.b=flr(rnd(3)+1)
-	slots.c=flr(rnd(3)+1)
+	slots.a=flr(rnd(4))
+	slots.b=flr(rnd(4))
+	slots.c=flr(rnd(4))
 end
 
 function results()
-	gamestate=2
 	print(slots.a)
 	print(slots.b)
 	print(slots.c)
-	if slots.a==slots.b and slots.a==slots.c then print("you won!")
-
-		else print("oops! try again") end
 end
 __gfx__
 00000000000660000066660000666600006006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
