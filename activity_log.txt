@@ -1,3 +1,14 @@
 
 2026-06-28 20:17:58 C:/pico8/carts/untitled.p8
  iii
+2026-06-28 20:31:20 C:/pico8/carts/untitled.p8
+ iicgggggggggggggggggggcciiiicccccccccccccccccccccccccccccii
+2026-06-28 20:34:17 C:/pico8/carts/g.loop.p8
+ iiiicii.ii
+2026-06-28 20:34:47 C:/pico8/carts/tools/g.loop.p8
+ iiiiiiii
+2026-06-28 20:35:11 C:/pico8/carts/games/slots.p8
+ ccccccccccgccccccccccccccccc.........cccrccccc.......cccrcccc.rciiiiiiiiiiiiiiii
+ iii.iiiiiiii.ccccmgmmmmgggmmmgggggg..g.ccc.........iii.......iii.........iiiii
+2026-06-28 20:43:22 C:/pico8/carts/untitled.p8
+ ic
