@@ -24,8 +24,8 @@ end
 
 slots={}
 
-function start() 
-	makemachine() 
+function start()
+	cls(1)
 	print("welcome to slots!",20,40,10)
 	print("press z to roll slots")		
 end
@@ -46,14 +46,6 @@ function results()
 	if slots.a==slots.b and slots.a==slots.c then print("you won!")
 
 	else print("oops! try again") end
-end
--->8
---graphics
-
-function makemachine()
-	cls(1)
-	rectfill(0,65,128,128,10)
-	rect(10,70,40,120,11)
 end
 __gfx__
 00000000000bb0000099990000888800003003000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
