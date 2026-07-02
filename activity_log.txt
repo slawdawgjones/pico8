@@ -91,3 +91,17 @@
  iiii....iiiiiiiiiiiiii.iiiiiiiii.i.iiiiiiiiiii.......iiiigccccccrrcrccrrcccccccc
  ccccccc.........ccrrccccccccccccccccccccccccc....ccciic.cc.cccccccrccrcccccc.ccr
  _________rrrrrrciiii
+2026-07-02 16:59:22 C:/pico8/carts/untitled.p8
+ iii.....iiiii
+2026-07-02 17:00:01 C:/pico8/carts/games/slots.p8
+ rrcccc...cccrc..ccc..ccccc.....ccc.ccccccccccccccccc..cccccicccccrccccccrciccrcc
+ cicrc....rccccrrc.ccc.crrrccrccccccccccr__cirrrrccccccccccrrrccrrr_rrr__rccrccc.
+ ........ccccc.ccccccccccc.cc..ccccccccccccccccrrrcc.ggggggggggggggggggg.........
+ ggggiggcc..ccccc..ccrrccccc...cc...cccc.....ccccccccc...c.........c..cc.cccc.cc.
+ ...c.cc...ccc.ccccc.ii..cccccc.ccc......ccc..c.........c..c...cciccrcccc.....ccc
+ cccccrc.cc.........c..ccccccccccccrcrccccccrccccc..cccc.........cc..cccc..icc...
+ .....cccccccc..cc.....rc.........cc....cccccccccccccccccc.cccccccccic.....cggggg
+ g.cc.........ccccc...ccc.ii...ccc...ccccc....cc..ccccccc...cccccccccccccccc..ccr
+ crccccccccccrcc....cccc.cc........cccc.........rccccc..cccccccccccccccrcccrrc..c
+ ccccccccc.ccrcccccccccccc..c....cccccccrcccccccrccc...rcccrccccccccccccrcggccrrr
+ r_rr

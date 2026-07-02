@@ -2,8 +2,6 @@ pico-8 cartridge // http://www.pico-8.com
 version 43
 __lua__
 --gameloop 
---variables
-
 gamestate=0 --0 menu, 1 roll, 2 results
 
 function _update()
@@ -36,11 +34,11 @@ end
 
 function rollslots()
 	gamestate=1
-	spin()	
 	print("rolling...")
 	slots.a=flr(rnd(3)+1)
 	slots.b=flr(rnd(3)+1)
 	slots.c=flr(rnd(3)+1)
+	spin()
 end
 
 function results()
@@ -59,9 +57,6 @@ end
 
 function makemachine()
 	cls(1)
-	spr(1,20,90)
-	spr(2,60,90)
-	spr(3,100,90)
 	rectfill(0,65,128,128,10)
 	rect(05,70,40,120,11)
 	rect(45,70,80,120,11)
