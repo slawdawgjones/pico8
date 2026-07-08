@@ -25,20 +25,19 @@ end
 function _update()	
 	if gamestate==0 and btn(4) then gamestate=1 end
 		spawnplayer()
-		movebullet()
 end
 
 function _draw()
-	makeframe()
 	animateplayer()
 	if gamestate==1
 	then cls()
 		framecolor=11
-		makeframe()
+		shoot()
+		movebullet()
 		spawnplayer()
 	 moveplayer()
-	 shoot()
-		comets()
+	 makeframe()
+	 comets()
 	end
 end
 -->8
@@ -50,13 +49,9 @@ player.y=110
 player.spr=3
 player.speed=2
 player.timing=.25
-player.rof=.25
 
 bullets={}
 bullets.spr=5
-bullets.x=player.x
-bullets.y=player.y
-bullets.speed=0
 
 	
 
@@ -78,15 +73,12 @@ function moveplayer()
 end
 
 function shoot()
-	if gamestate==1 and btn(5)
-		then add(bullets,bullets.x,bullets.y,bullets.speed)
-	bullets.x=player.x
-	spr(bullets.spr,bullets.x,bullets.y)
+	if gamestate==1 and btnp(5)
+		then add(bullets, {bullets.x,bullets.y,bullet.speed})
 	end
 end
 
 function movebullet()
- all(bullets,bullets.y=bullets.y+bullets.speed))
 end
 -->8
 --world generation

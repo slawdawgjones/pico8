@@ -105,3 +105,60 @@
  crccccccccccrcc....cccc.cc........cccc.........rccccc..cccccccccccccccrcccrrc..c
  ccccccccc.ccrcccccccccccc..c....cccccccrcccccccrccc...rcccrccccccccccccrcggccrrr
  r_rr
+2026-07-07 13:12:06 C:/pico8/carts/untitled.p8
+ iii
+2026-07-07 13:17:03 C:/pico8/carts/untitled.p8
+ i
+2026-07-08 13:16:10 C:/pico8/carts/untitled.p8
+ ii.i.iiiiii
+2026-07-08 13:16:43 C:/pico8/carts/games/slots.p8
+ crri.i.........circccci
+2026-07-08 13:39:19 C:/pico8/carts/untitled.p8
+ ii....i.........i.........ii.........iiiii
+2026-07-08 14:33:37 C:/pico8/carts/untitled.p8
+ i.........i.........i.i....iii.iii.........ii..iiiciiiii.i.iiii
+2026-07-08 14:41:30 C:/pico8/carts/games/shmup.p8
+ iccccccc...ciccc......cmmmgiccccccccciiiiiii.........icccccccccccccc.ccccccccccc
+ ccccccicc.c....cccrcccccccccrccr_____rcc.........ccirciccccccccccccrciccrccirrcc
+ ccccggggggg........gggggggggggggggggggccg.........ggccrcccccicc..ccccicccccccccc
+ ccccccccc..c.........cc.c.ccccccc.cccc.cccccciccccicccrrcc.cc.cccccccccccccccccc
+ .....cccccc.cccccccccccccccccccccccc.cc.ccccccrccccrccccccccccccccccccccccccrcci
+ cccccccc.........crcccccrciccrrcgggggggggggcccccccgg......g.......gggggggggggg..
+ .......gg.ggggg...gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+ ggggggggggggggggggggggggggggggggggggg.........gggggggggggggggggggggggggggggggggg
+ gggcccc.ccccccc...ccciccrcccc.........cccc..c..ccrcccrc.........cc.....cccccrc..
+ .cccccccccrccicrcccccrccccccccicccccccccccc.....ccccc..ccccc...ccccccccc.....ccc
+ ccccccccc.........rccccccccccc..cciccciccciccccccccccrcccccc.........c.......ccr
+ cccccccccccrrccccc.ccccccccicci.cccccciii....cccc....cccciiic.cccccccccicccciicc
+ rccc.cccccccciccccrcccrcccccccricccccccccc.ccrccccccccccgrgcccrgcccc.cccc.......
+ ..cccccccccccciccccccccccccicccccicccicc...cccii.cccrcc..ccrcicrcrccccccccciccci
+ cc.........cciccccccciccc.cccccccc.........crcrcccrcccricrccircccccccccccccccccc
+ cccccccrcccccccccccccccc.cccccccccccrccccccccccccrccrccccicccccrrcccccccccccrrcc
+ .........crrrccccccccccrccccicc....cccccccccrccccrcccccccccrcccccccccccicrcccrrc
+ rrcc.........r_ccccrrcrcc.ccccccc.........c....c.........crrrrcccccccrc.........
+ crrccccccccc.cicccccccccccicc.ccccirccccrcccccccccccccrccccccc.......ccccccccrcc
+ ccccccciccrcc.cccccccccrcccccccccicccccccccccccc...rcccr_________rcccgc.........
+ rccccccrcccccccccccccccccccrcccccciccccrcccccccrrccrcggggggg.........gggggggrgcc
+ cccccc.cccccrccrcrrrrcccccccccccccccrrccrrccc.........c.........riccccccrccrccrr
+ rcrrrrccrrcrrrircccccrrii.cccrrccrccrrcrcccicrrrcccccccccrrrcccrcccccccirccccccc
+ ccrcc.ciggggggggggggggggggggrgcccccccccccccccccccc.........icc.cccc.........cccg
+ giiicrcccccccccccrccggccccccrcccccccccccccic.........cccc.iccrcrcccrccccccrrccc.
+ ...cccccccccccc.ccccccccccc..cccccc....cccccccccricccc.........c.........ccccrrr
+ rrrr____ccccrccccccccccccc...ccccc.........ccccc.........cccc.ccccccciccicciiccc
+ iicccccccc.........cc.........ccccccccccccc.iccrccccccccccccc..cciiiccicrcccccci
+ crcicccrri.cccccciicccccccci.cccrccc..cc.ccciccciicccccrccccricc.......ccrccccc.
+ c...cccrccc.ccr____rrcrcc....ccccicic.........c.cc.cccc..ciicrri.ccccccircc.....
+ ....ccccrrc.........cc.ccc.........ccccccccicc.......cccc.......cccccccccrrrrccc
+ .cccricrccccc......cc.cc.c....cccccccccccccc........cicciicccccccccririccccccccc
+ iccciiiccccccciccccccccrccrcccccrcccccccrc....crrc.........cccc.......ccccccccrc
+ ccrccccccccccccciricrcccccccccccccccccrrcccrrccrcccccccc.cciccccrccccriicccccccc
+ crccc......rrccccccccccccccccii.cccccccciiccccciccccccci..ccc.........cccccccrii
+ iicciiirrcmccccccccciicciciiccccccccicc.........cc....ccc.........gggiiccccciiii
+ iii
+2026-07-08 18:41:29 C:/pico8/carts/g.loop.p8
+ icccggggggggggggggg.g.........ggggggggggcccccccccccccccccccccccccciciccirc...ccg
+ gggggggggggggccccccccccccccciccc..ciccccccccccccccccccccccccccccccicccccccccccci
+ ccicci....c......cccccccccccccccccccciccccciiicccc..ccicicrccccccrcccc......cccc
+ ccccccrccccccccccccrcccccccccccccciccrriccc.rccccccccccccrccrrrrrcccrcrriccc.ccc
+ ccccc.cci.cccccccccrcrcccccccccccrcriccc..ccccccccc..ccc..cccccccc..ccccc.rccc..
+ ..c.cccc...cciccccccrcrrccc.........iccciiiccc

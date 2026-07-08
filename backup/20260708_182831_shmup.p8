@@ -25,7 +25,6 @@ end
 function _update()	
 	if gamestate==0 and btn(4) then gamestate=1 end
 		spawnplayer()
-		movebullet()
 end
 
 function _draw()
@@ -38,6 +37,7 @@ function _draw()
 		spawnplayer()
 	 moveplayer()
 	 shoot()
+		movebullet()
 		comets()
 	end
 end
@@ -54,9 +54,6 @@ player.rof=.25
 
 bullets={}
 bullets.spr=5
-bullets.x=player.x
-bullets.y=player.y
-bullets.speed=0
 
 	
 
@@ -86,7 +83,8 @@ function shoot()
 end
 
 function movebullet()
- all(bullets,bullets.y=bullets.y+bullets.speed))
+	if gamestate==1 then bullets.
+	end
 end
 -->8
 --world generation

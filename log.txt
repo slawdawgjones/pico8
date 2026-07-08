@@ -1,212 +1,609 @@
 [000000] codo_init
 [000000]   platform: Windows
-[000013]   Found config.txt
-[000013]   
-[000014]     01 window_size 0 0 // window width, height
-[000014]     02 screen_size 0 0 // screen width, height (stretched to window) 
-[000014]     03 show_fps 0 // Draw frames per second in the corner
-[000014]     04 windowed 1 // 1 to start up in windowed mode
-[000014]     05 window_position -1 -1 // x and y position of window (-1, -1 to let the window manager decide)
-[000014]     new window position: -1, -1
-[000014]     06 frameless 0 // 1 to use a window with no frame
-[000014]     07 fullscreen_method 1 // 0 maximized window (linux)  1 borderless desktop-sized window  2 hardware fullscreen (warning: erratic behaviour under some drivers)
-[000014]     08 blit_method 0  // 0 auto  1 software (slower but sometimes more reliable)  2 hardware (can do filtered scaling) 
-[000014]     09 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
-[000014]     10 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
-[000014]     11 sessions 7 // number of times program has been run
-[000014]     12 rmb_key 0 // 0 for none  226 for LALT
-[000014]     13 desktop_path 
-[000014]     14 read_controllers_in_background 0
-[000014]     15 sound_volume 256 // 0..256
-[000014]     16 music_volume 256 // 0..256
-[000014]     17 mix_buffer_size 1024
-[000014]     18 map_scancodes 
-[000014]     19 use_wget 0 // (Linux) 1 to use wget for downloads instead of libcurl (must be installed)
-[000014]     20 version 0.2.7
-[000014]     21 volume 256
-[000014]     22 root_path C:/pico8/carts/
-[000014]     23 cdata_path C:/pico8/cdata/
-[000014]     24 joystick_index 0
-[000014]     25 merge_joysticks 0
-[000014]     26 button_keys 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[000014]     27 live_notes 0
-[000014]     28 cursor_snap 0
-[000014]     29 gui_theme 0
-[000014]     30 screenshot_scale 3
-[000014]     31 gif_scale 3
-[000014]     32 gif_len 16
-[000014]     33 gif_reset_mode 0
-[000014]     34 host_framerate_control 1
-[000014]     35 splore_filter 0
-[000014]     36 boot_to_splore 0
-[000014]     37 tab_width 1
-[000014]     38 draw_tabs 0
-[000014]     39 record_activity_log 1
-[000014]     40 allow_function_keys 1
-[000014]     41 check_for_cart_updates 1
-[000014]     42 auto_hide_mouse_cursor 5
-[000014]     43 aggressive_backups 0
-[000014]     44 periodic_backups 20
-[000014]     45 transform_screen 0
-[000014]     46 gfx_grid_lines 0
-[000014]     47 capture_timestamps 0
-[000014]     48 max_prefetch_threads 4
-[000014]     49 accept_future 0
-[000014]   
-[000014]   codo_system_init
-[000197]   Compiled against SDL version: 2.0.2
-[000197]   Linked against SDL version:   2.0.9
-[000197]   Current video driver: windows
-[000197]   codo_reset_timer
-[000197]   codo_gui_init
-[000197]   codo_keys_init
-[000197]   codo_text_init
-[000198]   codo_video_init
-[000198]   codo_mouse_init
-[000198]   codo_joystick_init
-[000199]   Reading controller mappings: C:/pico8/sdl_controllers.txt
-[000199]   searching for joysticks
-[000199]     found 0 joysticks
-[000199]   ok
-[000199] ok
-[000206] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
-[000210] codo_set_screen 128 128 8 100
-[000210]  window size: 640 540
-[000319]   setting filter to nearest (screen_mode 0  back page width: 128)
+[000000]   Found config.txt
+[000000]   
+[000000]     01 window_size 0 0 // window width, height
+[000000]     02 screen_size 0 0 // screen width, height (stretched to window) 
+[000000]     03 show_fps 0 // Draw frames per second in the corner
+[000000]     04 windowed 1 // 1 to start up in windowed mode
+[000000]     05 window_position -1 -1 // x and y position of window (-1, -1 to let the window manager decide)
+[000000]     new window position: -1, -1
+[000000]     06 frameless 0 // 1 to use a window with no frame
+[000000]     07 fullscreen_method 1 // 0 maximized window (linux)  1 borderless desktop-sized window  2 hardware fullscreen (warning: erratic behaviour under some drivers)
+[000000]     08 blit_method 0  // 0 auto  1 software (slower but sometimes more reliable)  2 hardware (can do filtered scaling) 
+[000000]     09 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
+[000000]     10 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
+[000000]     11 sessions 12 // number of times program has been run
+[000000]     12 rmb_key 0 // 0 for none  226 for LALT
+[000000]     13 desktop_path 
+[000000]     14 read_controllers_in_background 0
+[000000]     15 sound_volume 256 // 0..256
+[000000]     16 music_volume 256 // 0..256
+[000000]     17 mix_buffer_size 1024
+[000000]     18 map_scancodes 
+[000000]     19 use_wget 0 // (Linux) 1 to use wget for downloads instead of libcurl (must be installed)
+[000000]     20 version 0.2.7
+[000000]     21 volume 256
+[000000]     22 root_path C:/pico8/carts/
+[000000]     23 cdata_path C:/pico8/cdata/
+[000000]     24 joystick_index 0
+[000000]     25 merge_joysticks 0
+[000000]     26 button_keys 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[000000]     27 live_notes 0
+[000000]     28 cursor_snap 0
+[000000]     29 gui_theme 0
+[000000]     30 screenshot_scale 3
+[000000]     31 gif_scale 3
+[000000]     32 gif_len 16
+[000001]     33 gif_reset_mode 0
+[000001]     34 host_framerate_control 1
+[000001]     35 splore_filter 0
+[000001]     36 boot_to_splore 0
+[000001]     37 tab_width 1
+[000001]     38 draw_tabs 0
+[000001]     39 record_activity_log 1
+[000001]     40 allow_function_keys 1
+[000001]     41 check_for_cart_updates 1
+[000001]     42 auto_hide_mouse_cursor 5
+[000001]     43 aggressive_backups 0
+[000001]     44 periodic_backups 20
+[000001]     45 transform_screen 0
+[000001]     46 gfx_grid_lines 0
+[000001]     47 capture_timestamps 0
+[000001]     48 max_prefetch_threads 4
+[000001]     49 accept_future 0
+[000001]   
+[000001]   codo_system_init
+[000666]   Compiled against SDL version: 2.0.2
+[000666]   Linked against SDL version:   2.0.9
+[000666]   Current video driver: windows
+[000666]   codo_reset_timer
+[000666]   codo_gui_init
+[000666]   codo_keys_init
+[000666]   codo_text_init
+[000667]   codo_video_init
+[000667]   codo_mouse_init
+[000667]   codo_joystick_init
+[000671]   Reading controller mappings: C:/pico8/sdl_controllers.txt
+[000672]   searching for joysticks
+[000672]     found 0 joysticks
+[000672]   ok
+[000672] ok
+[000702] codo_load_pod: C:/Program Files (x86)/PICO-8/pico8.dat ok 
+[000708] codo_set_screen 128 128 8 100
+[000708]  window size: 640 540
+[001013]   setting filter to nearest (screen_mode 0  back page width: 128)
   renderer direct3d:
    flags: 0x0000000E ( |  | )
    texture formats (3): ARGB8888, YV12, IYUV
    max texture size: 8192x8192
-[000322]  desktop size: 1500 1000
-[000322] ok
-[000327] codo_sound_init mix_buffer_size: 1024
-[000328] codo_sound_init
-[000328] SDL_INIT_AUDIO ok
-[000585] SDL_OpenAudio ok
-[000585]  freq:22050
+[001017]  desktop size: 1500 1000
+[001017] ok
+[001026] codo_sound_init mix_buffer_size: 1024
+[001026] codo_sound_init
+[001026] SDL_INIT_AUDIO ok
+[001330] SDL_OpenAudio ok
+[001330]  freq:22050
  channels:1
-[000585] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
-[000585] Current audio driver: wasapi
-[002596] splore_init
-[002596] could not load favourites file: C:/pico8/favourites.txt
-[003801] saving gif to: C:/Users/windr/Desktop/untitled_0.gif
-[031746] run_cart current_filename: C:/pico8/carts/untitled.p8 running_filename: untitled.p8 running_cart_lid: 
-[033848] run_cart current_filename: C:/pico8/carts/untitled.p8 running_filename: untitled.p8 running_cart_lid: 
-[034588] run_cart current_filename: C:/pico8/carts/untitled.p8 running_filename: untitled.p8 running_cart_lid: 
-[036573] run_cart current_filename: C:/pico8/carts/untitled.p8 running_filename: untitled.p8 running_cart_lid: 
-[040328] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[077274] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[103596] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[132750] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[136846] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[150256] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[153893] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[157195] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[159794] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[162234] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[202298] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[216217] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[229369] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[234340] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[236839] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[240701] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[247387] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[252557] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[257829] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[261500] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[272077] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[284310] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[290888] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[306573] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[323389] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[326007] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[333729] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[350990] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[357236] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[365075] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[372704] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[382386] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[387961] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[393441] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[398278] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[398616] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[409510] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[413016] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[417146] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[439960] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[455845] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[470989] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[506440] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[683744] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[707118] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[854387] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[858978] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[861832] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[888657] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1091969] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1136383] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1140133] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1157750] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1289464] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1298297] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1343283] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1354555] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1423972] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1430580] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1437197] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1440928] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1445478] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1448251] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1456312] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1461417] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1464753] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1471968] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1476367] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1575147] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1626061] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1637277] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1660578] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1848085] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1850414] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1888038] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[1925762] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2068879] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2071911] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2126506] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2225460] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2230280] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2236839] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2269610] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2296073] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2381089] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2432498] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2435733] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2449747] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2457943] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2461030] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2480853] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2511284] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2515547] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2528706] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2574932] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2596395] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2611157] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2613126] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2619795] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2621303] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2641135] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2654407] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2676668] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2693446] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2709270] run_cart current_filename: C:/pico8/carts/games/slots.p8 running_filename: games/slots.p8 running_cart_lid: 
-[2731392] window closed (14)
-[2731392] codo_exit
-[2731392]   cmusic_stop
-[2731392]   codo_main_exit
-[2731401]   codo_config_save
-[2731405]   codo_sound_exit
-[2731405]   codo_video_exit
-[2731493]   codo_joystick_exit
-[2731493]   codo_system_exit
-[2731494]   codo_items_created: 1410
-[2731494] ok
+[001330] Built-in audio drivers: 0 wasapi 1 directsound 2 winmm 3 disk 4 dummy
+[001330] Current audio driver: wasapi
+[003364] splore_init
+[003364] could not load favourites file: C:/pico8/favourites.txt
+[442396] adding display boundary offset: 0 0 (1500 1000)
+[442396] fullscreen; updated desktop of display 0 to 1500 1000
+[442396] setting fullscreen window size to 1500 1000
+[443175]   setting filter to nearest (screen_mode 1  back page width: 128)
+  renderer direct3d:
+   flags: 0x0000000E ( |  | )
+   texture formats (3): ARGB8888, YV12, IYUV
+   max texture size: 8192x8192
+[445184] adding display boundary offset: 0 0 (1500 1000)
+[445962]   setting filter to nearest (screen_mode 0  back page width: 128)
+  renderer direct3d:
+   flags: 0x0000000E ( |  | )
+   texture formats (3): ARGB8888, YV12, IYUV
+   max texture size: 8192x8192
+[509129] adding display boundary offset: 0 0 (1500 1000)
+[509129] fullscreen; updated desktop of display 0 to 1500 1000
+[509129] setting fullscreen window size to 1500 1000
+[509289]   setting filter to nearest (screen_mode 1  back page width: 128)
+  renderer direct3d:
+   flags: 0x0000000E ( |  | )
+   texture formats (3): ARGB8888, YV12, IYUV
+   max texture size: 8192x8192
+[1190847] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1193592] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1198600] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1264604] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1266438] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1268010] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1302304] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1309707] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1312404] adding display boundary offset: 0 0 (1500 1000)
+[1312570]   setting filter to nearest (screen_mode 0  back page width: 128)
+  renderer direct3d:
+   flags: 0x0000000E ( |  | )
+   texture formats (3): ARGB8888, YV12, IYUV
+   max texture size: 8192x8192
+[1331863] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1339243] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1415265] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1421088] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1424489] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1430449] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1433431] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1470724] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1474435] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1476200] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1478682] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1481535] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1485324] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1493829] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1496799] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1500765] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1502736] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1686275] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1694687] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1699965] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1705064] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1731242] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1741233] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1749170] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1856374] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1899564] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1904794] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1914683] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1926324] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1929948] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1958876] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[1970552] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2049002] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2099007] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2142189] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2157931] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2176789] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2180363] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2226106] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2233192] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2240191] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2325316] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2344270] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2350036] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2359102] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2408819] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[2418223] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3063066] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3113183] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3117385] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3120672] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3131090] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3239976] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3248386] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3252873] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3293548] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3327279] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3371282] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3378040] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3384487] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3389754] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3404023] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3431135] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3437793] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3531676] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3635464] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3653748] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3682822] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3691339] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3695146] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3700052] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3704648] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3707463] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3720357] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3739601] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3900912] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3938963] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3981840] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3986096] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3990557] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[3995063] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4019675] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4025440] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4075468] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4080563] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4112203] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4117133] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4132207] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4134549] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4144344] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4182666] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4194625] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4199677] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4201854] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4204959] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4206793] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4208409] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4210271] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4234036] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4252450] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4280340] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4315062] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4330977] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4444999] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4455431] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4459882] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4483176] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4486337] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4498584] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4503342] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4513476] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4519958] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4534940] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4539706] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4542402] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4558977] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4574003] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4580592] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4586551] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4591106] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4598852] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4622252] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4628897] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4638705] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4641769] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4698307] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4708522] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4722252] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4756093] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4806466] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4811609] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4818716] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4824028] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4836090] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4842928] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4845638] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4853098] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4856999] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4915008] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4933233] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[4954426] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5011819] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5021783] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5059546] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5069445] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5085788] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5101702] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5105233] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5129540] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5140027] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5209701] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5213098] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5216204] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5218611] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5239290] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5250276] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5265646] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5311842] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5328091] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5335659] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5344090] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5358301] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5394312] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5400914] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5412565] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5415832] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[5421873] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[7785383] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[7804057] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[7807280] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[7811918] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8357875] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8363508] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8392598] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8522956] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8563027] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8597729] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8599535] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8602006] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8623790] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8626920] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8642134] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8682983] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8732866] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8736021] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8744512] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8748181] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8753220] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8758276] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8762836] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8782390] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8792154] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8796353] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8830312] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8844058] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8860226] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8868060] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8886832] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8914871] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8922716] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[8925563] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9341130] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9362154] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9366085] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9372555] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9383976] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9411012] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9422353] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9443826] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9458488] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9462015] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9474672] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9482305] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9492400] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9571062] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9575119] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9609710] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9621966] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9627354] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9631862] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9636111] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9639009] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9660096] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9691746] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9694236] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[9707199] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10175317] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10200360] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10209447] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10212975] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10216680] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10229549] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10233307] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10236824] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10247073] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10256903] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10259927] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10263408] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10268587] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10279700] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10285323] adding display boundary offset: 0 0 (1500 1000)
+[10285323] fullscreen; updated desktop of display 0 to 1500 1000
+[10285323] setting fullscreen window size to 1500 1000
+[10285484]   setting filter to nearest (screen_mode 1  back page width: 128)
+  renderer direct3d:
+   flags: 0x0000000E ( |  | )
+   texture formats (3): ARGB8888, YV12, IYUV
+   max texture size: 8192x8192
+[10286481] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10290146] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10309035] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10322130] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10327542] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10331075] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10334558] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10341030] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10347951] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10352055] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10357387] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10390881] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10395167] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10407968] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10412439] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10427371] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10433015] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10436742] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10439037] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10444226] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10469299] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10547781] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10586857] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10711957] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10724645] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10924166] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10928541] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10934243] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10948730] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10967105] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[10971930] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11002736] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11011496] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11032691] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11112710] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11122161] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11127951] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11131979] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11139519] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11161083] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11323635] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11494508] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11539929] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11633250] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11694262] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11713889] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11722930] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11727605] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11730642] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11732157] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11734416] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11741452] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11746828] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11748786] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11750919] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11760309] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11762561] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11878822] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11888270] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11891612] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11925634] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11940126] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11943699] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11956028] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11961769] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11983661] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11989114] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[11993547] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12008274] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12037270] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12065498] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12082793] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12119286] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12122962] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12129889] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12131864] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12150948] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12157676] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12164875] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12166873] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12206010] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12247444] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12266939] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12285673] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12291963] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12325374] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12332498] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12415923] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12418205] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12424191] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12452938] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12458597] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12526614] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12530092] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12611850] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12667172] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12676776] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12678431] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12762363] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12767893] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12798569] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12800884] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12802165] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12809859] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12945401] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12954464] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12990186] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[12995931] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13026618] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13028230] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13036127] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13040393] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13069025] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13095935] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13106465] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13119702] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13125035] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13148037] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13169689] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13879218] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13900291] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13913108] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13936214] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13955595] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13959131] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13968253] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[13987575] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14022245] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14035534] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14047690] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14080860] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14085690] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14100294] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14115319] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14120348] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14150583] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14180934] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14225044] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14233213] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14235782] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14257862] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14260461] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14266410] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14269015] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14286811] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14288814] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14308554] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14310950] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14541346] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14569221] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14609404] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14613950] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14622890] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14628837] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14630994] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14658287] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14659844] run_cart current_filename: C:/pico8/carts/games/shmup.p8 running_filename: games/shmup.p8 running_cart_lid: 
+[14928026] adding display boundary offset: 0 0 (1500 1000)
+[14928154]   setting filter to nearest (screen_mode 0  back page width: 128)
+  renderer direct3d:
+   flags: 0x0000000E ( |  | )
+   texture formats (3): ARGB8888, YV12, IYUV
+   max texture size: 8192x8192
+[15140419] saving screenshot to: C:/Users/windr/Desktop/g loop_0.png
+[15140484] codo_save_png result: 0  file: C:/Users/windr/Desktop/g loop_0.png
+[15141963] saving screenshot to: C:/Users/windr/Desktop/g loop_1.png
+[15142022] codo_save_png result: 0  file: C:/Users/windr/Desktop/g loop_1.png
+[15146647] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15235600] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15343141] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15347320] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15363888] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15380376] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15405193] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15456295] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15476280] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15492707] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15495864] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15552976] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15591089] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15600814] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15609745] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15628295] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15632425] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15633881] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15660763] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15665404] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15673765] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15686704] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15694134] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15704967] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15757796] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15779098] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15795977] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15839980] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15849585] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15870940] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15896942] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15909095] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15919859] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15938548] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15943389] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15947482] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[15952864] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16032533] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16036588] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16042745] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16046401] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16047735] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16056450] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16062394] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16078483] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16084783] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16201388] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16238731] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16268453] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16274353] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16278692] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16286134] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16288023] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16419065] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16432521] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16438248] run_cart current_filename: C:/pico8/carts/g.loop.p8 running_filename: g.loop.p8 running_cart_lid: 
+[16450175] window closed (14)
+[16450176] codo_exit
+[16450176]   cmusic_stop
+[16450176]   codo_main_exit
+[16450182]   codo_config_save
+[16450214]   codo_sound_exit
+[16450214]   codo_video_exit
+[16450230]   codo_joystick_exit
+[16450230]   codo_system_exit
+[16450233]   codo_items_created: 1714
+[16450233] ok

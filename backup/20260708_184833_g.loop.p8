@@ -3,39 +3,17 @@ version 43
 __lua__
 --gameloop 
 
-
 function _init()
-cls(1)
+cls(0)
+create
 end
 
 function _update()
-moveplayer()
+
 end
 
 function _draw()
-cls(1)
-	grid()
-drawplayer()
-end
--->8
---player
 
-player={}
-player.x=64
-player.y=64
-player.speed=1
-
-function drawplayer()
-	spr(1,player.x,player.y)
-end
-
-function moveplayer()
- if btn(0) then player.x-=player.speed
- elseif btn(1) then player.x+=player.speed
- elseif btn(2) then player.y-=player.speed
- elseif btn(3) then player.y+=player.speed
-
- end
 end
 __gfx__
 00000000007777000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
